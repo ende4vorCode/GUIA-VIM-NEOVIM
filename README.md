@@ -111,3 +111,56 @@ Siempre que eliminamos algo VIM recordara lo ultimo, en palabras secillas, elimi
 `shift + p` Pegamos el elemento que copiamos, justo arriba del cursor.
 
 Si bien te mencione anteriormente una forma de eliminar muchas lineas, esa no era la forma mas eficiente, ahora puedes utilizar `10 + dd` O sea que repetimos 10 veces la elimnacion de lineas, esto se puede hacer con el numero de veces que necesites.
+
+## Reemplazar
+
+`r` Es un comando inutil xd, al posicionarse con el cursor en modo normal, sobre un caracter que queramos reemplazar.
+
+## Operador de cambio
+
+Me posiciono en el inicio de una palabra en modo normal
+`c+w` Change word, con este cambiamos una palabra.
+`c+i+w` Change inner word, eliminamos la palabra en cualquier posicion de la palabra.
+
+## Salto de lineas
+
+Saltar dentro del archivo.
+
+`g+g` Nos lleva hasta el inicio del archivo.
+`shift+g` Nos lleva al final del archivo.
+
+## Busqueda
+`/` Buscamos algo de adelante hacia atras.
+`?` Buscamos algo de atras hacia adelante.
+`n` Una vez seleccionamos algo, para ir saltando entre lineas.
+`shift+n` Saltar hacia atras.
+
+## Saltar al parentesis correspondiente
+
+Nos posicionamos en el parentesis.
+`%` Nos movemos al parentesis correspondiente.
+
+## Saltar en la linea
+`0` Nos lleva al inicio de la linea.
+`$` Nos lleva al final de la linea.
+
+## Reemplazando cadenas en la linea
+
+`:s/palabra/palabron` Sustituir/cadena queremos reemplazar/nueva cadena.
+`:s/palabra/palabron/g` Sustituye todas las ocurrencias de la linea.
+`:%s/palabra/palabron/gc` Sustituye todas las ocurrencias dentro del archivo. El parametro % te pregunta si quieres reemplazar alguna de las que hara, si no lo pones, simplemente reemplazara todo.
+
+## Nueva linea
+
+`o` Crea una nueva lina por debajo.
+`shift+o` Crea una nueva linea justo por arriba.
+
+## Reemplazo de caracteres
+
+`shift+r` Nos deja en modo reemplazar.
+
+## Copiar y pegar
+
+`v` Modo visual. Nos permite seleccionar donde nos estemos moviendo, podemos usar la `x` cortamos.
+`v` Modo visiual, seleccionamos. Luego utilizamos `y` y luego `p` Copiamos y pegamos.
+
